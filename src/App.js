@@ -4,6 +4,7 @@ import './App.css';
 import Subtitulo from './components/Subtitulo';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FormTareas from "./components/FormTareas";
+import ItemTarea from "./components/ItemTarea";
 
 function App() {
   return (

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ListGroup } from 'react-bootstrap';
 import Subtitulo from './Subtitulo';
+import Titulo from './Titulo';
 
 const ListaTareas = () => {
     return (
