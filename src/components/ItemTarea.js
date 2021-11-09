@@ -1,10 +1,13 @@
+import Button from '@restart/ui/esm/Button';
 import React from 'react';
-import {ListGroup } from "react-bootstrap";
+import {ListGroup, Button } from "react-bootstrap";
 
 
 const ItemTarea = (props) => {
     return (
-        <ListGroup.Item className="my-5">{props.tarea}</ListGroup.Item>
+        <ListGroup.Item className="d-flex justify-content-between">{props.tarea}
+        <Button variant="danger" onClick={()=>props.borrarTarea(props.tarea)}>Borrar</Button>
+        </ListGroup.Item>
         
     );
 };
