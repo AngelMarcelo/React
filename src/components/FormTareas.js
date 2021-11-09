@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Form, Button } from 'react-bootstrap';
 import ListaTareas from './ListaTareas';
 import ItemTarea from './ItemTarea';
 
 
 const FormTareas = () => {
+
+  // crear los state que se necesiten
+  const [tareaIndividual, setTareaIndividual] = useState('');
+  
     return (
        <>
             <Form className="container my-5">
