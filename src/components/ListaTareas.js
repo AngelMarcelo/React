@@ -1,28 +1,19 @@
-import React from 'react';
-import { ListGroup } from 'react-bootstrap';
-import Subtitulo from './Subtitulo';
-import Titulo from './Titulo';
+import React from "react";
+import { ListGroup } from "react-bootstrap";
+import ItemTarea from "./ItemTarea";
+import Subtitulo from "./Subtitulo";
+import Titulo from "./Titulo";
 
-const ListaTareas = () => {
-    return (
-        <>
-         <ListGroup>
-            <ListGroup.Item>Cras justo odio</ListGroup.Item>
-            <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-            <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-            <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-            <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-        </ListGroup>
-<section>
-    <div>
-        <Titulo></Titulo>
-        <Subtitulo></Subtitulo>
-
-    </div>
-</section>
-        </>
-       
-    );
+const ListaTareas = (props) => {
+  return (
+    <>
+      <ListGroup className="my-5">
+        {props.arregloTareas.map((item, posicion) => (
+          <ItemTarea key={posicion} tarea={item}></ItemTarea>
+        ))}
+      </ListGroup>
+    </>
+  );
 };
 
 export default ListaTareas;
